@@ -5,7 +5,7 @@ DEVICE="/dev/input/event3"
 
 # Function to get the ID of discord's input stream
 get_id() {
-  # Dump pipewire's state and filter for our desired stream with jquery
+  # Dump pipewire's state and filter for our desired stream with jq
   local ID=$(pw-dump | jq '.[] 
     | select(.type=="PipeWire:Interface:Node" 
       and .info.props."application.process.binary"=="vesktop" 
