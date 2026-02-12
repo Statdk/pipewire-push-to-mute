@@ -23,7 +23,12 @@ echo $(get_id)
 # Depending on the device you want to watch, this may require root
 evtest "$DEVICE" | while read -r line; do
   # Slow down slightly for performance
-  sleep 0.05
+  #sleep 0.05
+  # Nevermind, this breaks it.
+  # TODO is rewrite this to query evtest because dumping pipewire every mouse move event 
+  #   isn't very nice to it.
+  #   Alternatively, find a way to update $ID asyncronously
+
 
   # Check if key press matches
   if echo "$line" | grep -q "KEY_DELETE"; then
