@@ -4,7 +4,7 @@ I've had it up to here dealing with shortcuts in wayland, so here's my little sc
 
 ### Known Issues
 
-Occasionally, the button's release event written by evtest is not detected. This results in the stream not being unmuted.
+Occasionally, the button's release event written by evtest is not detected. This results in the stream failing to unmute.
 
 ## Usage
 
