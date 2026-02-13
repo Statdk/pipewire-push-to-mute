@@ -19,7 +19,7 @@ You may want to run evtest in the terminal so you can adjust the `$DEVICE` varia
 - evtest
 - sudo (optionally)
 
-### Runnning
+### Running
 
 ```
 ./push-to-mute.sh
